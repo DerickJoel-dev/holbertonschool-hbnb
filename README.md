@@ -20,8 +20,11 @@ class PersistenceLayer.DatabaseRepository
 
 PresentationLayer.APIService --> BusinessLogicLayer.BusinessFacade : Facade Pattern
 BusinessLogicLayer.BusinessFacade --> PersistenceLayer.DatabaseRepository : DB Ops
+```
+
 
 ## 1. Detailed Class Diagram for Buisness Logic Layer
+
 ```mermaid
 classDiagram
 direction LR
@@ -81,3 +84,4 @@ User "1" --> "0..*" Place : owns
 User "1" --> "0..*" Review : writes
 Place "1" --> "0..*" Review : has
 Place "0..*" -- "0..*" Amenity : includes
+```
