@@ -1,87 +1,40 @@
+# 🏠 HBnB Evolution - Technical Documentation
 
-# holbertonschool-hbnb
-# HBnB Project: Part 1
-**Sketching with UML**:
+Welcome to **HBnB Evolution**, a simplified AirBnB-like application. This project follows a **three-layer architecture** and implements the **Facade Pattern** for modularity.
 
-Start by sketching out the application's backbone using UML (Unified Modeling Language) to create a blueprint for how our classes and components will interact. This step is crucial for visualizing the structure and relationships between different parts of our application.
+## 🚀 Features
+- **User Management**: Register, update profiles, admin roles.
+- **Place Management**: Users can list places with price, location, and amenities.
+- **Review System**: Users can leave reviews and ratings.
+- **Amenity Management**: Places can include a list of amenities.
 
-## 0. High-Level Package Diagram
-```mermaid
-classDiagram
-direction LR
+---
+## 📂 Project Structure
+---
+## 📄 Technical Documentation
+This project includes detailed UML diagrams and explanations:
 
-class PresentationLayer.APIService
-class BusinessLogicLayer.BusinessFacade
-class BusinessLogicLayer.User
-class BusinessLogicLayer.Place
-class BusinessLogicLayer.Review
-class BusinessLogicLayer.Amenity
-class PersistenceLayer.DatabaseRepository
+### **1️⃣ High-Level Package Diagram**
+- 📌 **[View UML Diagram](https://github.com/DerickJoel-dev/holbertonschool-hbnb/blob/main/docs_and_architecture/high_level_diagram/high_lvl_package_diagram.mmd)**
+- 📌 **[View Flowchart](https://github.com/DerickJoel-dev/holbertonschool-hbnb/blob/main/docs_and_architecture/high_level_diagram/high_lvl_flowchart.mmd)**
 
-PresentationLayer.APIService --> BusinessLogicLayer.BusinessFacade : Facade Pattern
-BusinessLogicLayer.BusinessFacade --> PersistenceLayer.DatabaseRepository : DB Ops
-```
+### **2️⃣ Business Logic Layer**
+- 📌 **[View Class Diagram](https://github.com/DerickJoel-dev/holbertonschool-hbnb/blob/main/docs_and_architecture/business_logic_diagram/business_logic_class_diagram.mmd)**
+- 📌 **[View Flowchart](https://github.com/DerickJoel-dev/holbertonschool-hbnb/blob/main/docs_and_architecture/business_logic_diagram/business_logic_flowchart.mmd)**
 
+### **3️⃣ API Interaction (Sequence Diagrams)**
+- 📌 **[User Registration](https://github.com/DerickJoel-dev/holbertonschool-hbnb/blob/main/docs_and_architecture/sequence_diagrams/user_registration_seq.mmd)**
+- 📌 **[Place Creation](https://github.com/DerickJoel-dev/holbertonschool-hbnb/blob/main/docs_and_architecture/sequence_diagrams/place_creation_seq.mmd)**
+- 📌 **[Review Submission](https://github.com/DerickJoel-dev/holbertonschool-hbnb/blob/main/docs_and_architecture/sequence_diagrams/review_submission_seq.mmd)**
+- 📌 **[Fetching Places](https://github.com/DerickJoel-dev/holbertonschool-hbnb/blob/main/docs_and_architecture/sequence_diagrams/fetch_places_seq.mmd)**
 
-## 1. Detailed Class Diagram for Buisness Logic Layer
+### **📘 Full Technical Documentation**
+📌 **[View Full Documentation](https://github.com/DerickJoel-dev/holbertonschool-hbnb/blob/main/docs_and_architecture/technical_documentation.md)**
 
-```mermaid
-classDiagram
-direction LR
+---
 
-class User {
-    +id: UUID
-    +firstName: string
-    +lastName: string
-    +email: string
-    +password: string
-    +isAdmin: bool
-    +createdAt: datetime
-    +updatedAt: datetime
-    +create()
-    +update()
-    +delete()
-}
-
-class Place {
-    +id: UUID
-    +title: string
-    +description: string
-    +price: float
-    +latitude: float
-    +longitude: float
-    +createdAt: datetime
-    +updatedAt: datetime
-    +create()
-    +update()
-    +delete()
-}
-
-class Review {
-    +id: UUID
-    +rating: int
-    +comment: string
-    +createdAt: datetime
-    +updatedAt: datetime
-    +create()
-    +update()
-    +delete()
-}
-
-class Amenity {
-    +id: UUID
-    +name: string
-    +description: string
-    +createdAt: datetime
-    +updatedAt: datetime
-    +create()
-    +update()
-    +delete()
-}
-
-%% Relaciones
-User "1" --> "0..*" Place : owns
-User "1" --> "0..*" Review : writes
-Place "1" --> "0..*" Review : has
-Place "0..*" -- "0..*" Amenity : includes
-```
+## 🛠️ Setup & Installation
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/YOUR_GITHUB_USERNAME/HBnB-Evolution.git
+   cd HBnB-Evolution
