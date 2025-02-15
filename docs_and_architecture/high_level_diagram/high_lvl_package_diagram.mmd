@@ -1,0 +1,33 @@
+classDiagram
+direction LR
+
+%% Presentation Layer
+class PresentationLayer {
+    +APIController
+    +UserService
+    +PlaceService
+    +ReviewService
+    +AmenityService
+}
+
+%% Business Logic Layer
+class BusinessLogicLayer {
+    +BusinessFacade
+    +User
+    +Place
+    +Review
+    +Amenity
+}
+
+%% Persistence Layer
+class PersistenceLayer {
+    +DatabaseRepository
+    +UserDAO
+    +PlaceDAO
+    +ReviewDAO
+    +AmenityDAO
+}
+
+%% Relaciones
+PresentationLayer --> BusinessLogicLayer : Facade Pattern
+BusinessLogicLayer --> PersistenceLayer : DB Ops
