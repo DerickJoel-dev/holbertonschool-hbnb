@@ -22,10 +22,10 @@ The following diagram illustrates the three-layer architecture of the system, im
 This diagram represents the **core business logic**, including the key entities (`User`, `Place`, `Review`, and `Amenity`).
 
 **🖼️ UML Diagram:**  
-![View UML Diagram](docs_and_architecture/business_logic_diagram/business_logic_class_diagram.mmd)
+![View UML Diagram](https://github.com/DerickJoel-dev/holbertonschool-hbnb/blob/main/docs_and_architecture/business_logic_diagram/business_logic_class_diagram.mmd)
 
 **🖼️ Flowchart Explanation:**  
-![View Flowchart](docs_and_architecture/business_logic_diagram/business_logic_flowchart.mmd)
+![View Flowchart](https://github.com/DerickJoel-dev/holbertonschool-hbnb/blob/main/docs_and_architecture/business_logic_diagram/business_logic_flowchart.mmd)
 
 ---
 
@@ -34,19 +34,19 @@ This section illustrates the interaction between the system layers when handling
 
 ### **4.1 User Registration**
 **🖼️ Diagram:**  
-![User Registration](docs_and_architecture/sequence_diagrams/user_registration_seq.mmd)
+![User Registration](https://github.com/DerickJoel-dev/holbertonschool-hbnb/blob/main/docs_and_architecture/sequence_diagrams/user_registration_seq.mmd)
 
 ### **4.2 Place Creation**
 **🖼️ Diagram:**  
-![Place Creation](docs_and_architecture/sequence_diagrams/place_creation_seq.mmd)
+![Place Creation](https://github.com/DerickJoel-dev/holbertonschool-hbnb/blob/main/docs_and_architecture/sequence_diagrams/place_creation_seq.mmd)
 
 ### **4.3 Review Submission**
 **🖼️ Diagram:**  
-![Review Submission](docs_and_architecture/sequence_diagrams/review_submission_seq.mmd)
+![Review Submission](https://github.com/DerickJoel-dev/holbertonschool-hbnb/blob/main/docs_and_architecture/sequence_diagrams/review_submission_seq.mmd)
 
 ### **4.4 Fetching a List of Places**
 **🖼️ Diagram:**  
-![Fetching Places](docs_and_architecture/sequence_diagrams/fetch_places_seq.mmd)
+![Fetching Places](https://github.com/DerickJoel-dev/holbertonschool-hbnb/blob/main/docs_and_architecture/sequence_diagrams/fetch_places_seq.mmd)
 
 ---
 
