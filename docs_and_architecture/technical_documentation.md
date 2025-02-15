@@ -10,10 +10,10 @@ This document provides the technical foundation for the HBnB Evolution project, 
 The following diagram illustrates the three-layer architecture of the system, implementing the **Facade Pattern** for communication between layers.
 
 **🖼️ UML Diagram:**  
-![View UML Diagram](docs_and_architecture/high_lvl_package_diagram.mmd)
+![View UML Diagram](docs_and_architecture/high_level_diagram/high_lvl_package_diagram.mmd)
 
 **🖼️ Flowchart Explanation:**  
-![View Flowchart](docs_and_architecture/high_lvl_flowchart.mmd)
+![View Flowchart](docs_and_architecture/high_level_diagram/high_lvl_flowchart.mmd)
 
 ---
 
