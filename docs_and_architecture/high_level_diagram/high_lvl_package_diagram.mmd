@@ -3,31 +3,37 @@ direction LR
 
 %% Presentation Layer
 class PresentationLayer {
-    +APIController
-    +UserService
-    +PlaceService
-    +ReviewService
-    +AmenityService
+    <<Interface>>
+    +ServiceAPI()
+    +registerUser()
+    +createPlace()
+    +submitReview()
+    +fetchPlaces()
 }
 
 %% Business Logic Layer
 class BusinessLogicLayer {
-    +BusinessFacade
-    +User
-    +Place
-    +Review
-    +Amenity
+    +handleRequest()
+    +validateData()
+    +processRequest()
+    +applyBusinessRules()
 }
 
 %% Persistence Layer
 class PersistenceLayer {
-    +DatabaseRepository
-    +UserDAO
-    +PlaceDAO
-    +ReviewDAO
-    +AmenityDAO
+    +save()
+    +update()
+    +delete()
+    +query()
 }
 
-%% Relaciones
+%% Database
+class Database {
+    +storeData()
+    +retrieveData()
+}
+
+%% Layer Interactions
 PresentationLayer --> BusinessLogicLayer : Facade Pattern
-BusinessLogicLayer --> PersistenceLayer : DB Ops
+BusinessLogicLayer --> PersistenceLayer : Database Operations
+PersistenceLayer --> Database : Queries
