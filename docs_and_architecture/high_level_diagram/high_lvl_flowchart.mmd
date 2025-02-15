@@ -1,0 +1,9 @@
+flowchart TD
+  A[Client Request] --> B[Presentation Layer API]
+  B -->|Facade Pattern| C[Business Logic Layer]
+  C -->|Database Operations| D[Persistence Layer]
+  D -->|Query Data| E[Database]
+  E -->|Return Data| D
+  D -->|Response| C
+  C -->|Process Response| B
+  B -->|Send Response| A
