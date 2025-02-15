@@ -1,0 +1,12 @@
+sequenceDiagram
+participant Client
+participant API
+participant Facade
+participant DB
+
+Client->>API: GET /places (query params)
+API->>Facade: getPlaces(queryParams)
+Facade->>DB: findPlaces(queryParams)
+DB-->>Facade: placesList
+Facade-->>API: placesList
+API-->>Client: 200 OK (placesList)

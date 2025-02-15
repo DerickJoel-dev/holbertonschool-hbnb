@@ -1,0 +1,12 @@
+sequenceDiagram
+participant Client
+participant API
+participant Facade
+participant DB
+
+Client->>API: POST /reviews (review data)
+API->>Facade: createReview(data)
+Facade->>DB: insertReview(reviewData)
+DB-->>Facade: reviewCreated
+Facade-->>API: reviewObject
+API-->>Client: 201 Created (Review)

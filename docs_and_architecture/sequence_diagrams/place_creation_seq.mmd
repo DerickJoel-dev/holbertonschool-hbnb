@@ -1,0 +1,12 @@
+sequenceDiagram
+participant Client
+participant API
+participant Facade
+participant DB
+
+Client->>API: POST /places (place data)
+API->>Facade: createPlace(data)
+Facade->>DB: insertPlace(newPlaceData)
+DB-->>Facade: placeCreated
+Facade-->>API: placeObject
+API-->>Client: 201 Created (Place)

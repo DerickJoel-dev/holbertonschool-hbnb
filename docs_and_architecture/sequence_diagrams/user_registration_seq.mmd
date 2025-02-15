@@ -1,0 +1,12 @@
+sequenceDiagram
+participant Client
+participant API
+participant Facade
+participant DB
+
+Client->>API: POST /users (registration data)
+API->>Facade: registerUser(data)
+Facade->>DB: insertUser(newUserData)
+DB-->>Facade: userCreated
+Facade-->>API: userObject
+API-->>Client: 201 Created (User)
