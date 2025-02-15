@@ -1,0 +1,58 @@
+classDiagram
+direction LR
+
+class User {
+    +id: UUID
+    +firstName: string
+    +lastName: string
+    +email: string
+    +password: string
+    +isAdmin: bool
+    +createdAt: datetime
+    +updatedAt: datetime
+    +create()
+    +update()
+    +delete()
+}
+
+class Place {
+    +id: UUID
+    +title: string
+    +description: string
+    +price: float
+    +latitude: float
+    +longitude: float
+    +createdAt: datetime
+    +updatedAt: datetime
+    +create()
+    +update()
+    +delete()
+}
+
+class Review {
+    +id: UUID
+    +rating: int
+    +comment: string
+    +createdAt: datetime
+    +updatedAt: datetime
+    +create()
+    +update()
+    +delete()
+}
+
+class Amenity {
+    +id: UUID
+    +name: string
+    +description: string
+    +createdAt: datetime
+    +updatedAt: datetime
+    +create()
+    +update()
+    +delete()
+}
+
+%% Relaciones
+User "1" --> "0..*" Place : owns
+User "1" --> "0..*" Review : writes
+Place "1" --> "0..*" Review : has
+Place "0..*" -- "0..*" Amenity : includes

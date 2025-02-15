@@ -1,0 +1,14 @@
+flowchart TD
+  %% Users
+  A[User] -->|Owns| B[Place]
+  A -->|Writes| C[Review]
+
+  %% Places
+  B -->|Receives| C
+  B -->|Includes| D[Amenity]
+
+  %% CRUD Operations
+  A -->|Can Create, Update, Delete| A1[Manage Profile]
+  B -->|Can Create, Update, Delete| B1[Manage Listings]
+  C -->|Can Create, Update, Delete| C1[Manage Reviews]
+  D -->|Can Create, Update, Delete| D1[Manage Amenities]
