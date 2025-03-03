@@ -1,4 +1,4 @@
-## 📌 Project Description
+## 📌Part 2: Implementation of Business Logic and API Endpoints
 - This project is a RESTful API for the HBNB platform, developed using Flask and Flask-RESTx. It handles multiple endpoints for managing users, places, amenities, and reviews. This phase focuses on testing and validation, ensuring the API works as expected.
 
 ## The API performs:
