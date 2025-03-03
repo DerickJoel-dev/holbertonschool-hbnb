@@ -7,6 +7,7 @@ Validation checks for request data.
 Automated and manual testing using **unittest** and **cURL**.
 
 ## 📂 Directory Structure
+``` bash
 📦 holbertonschool-hbnb/
  ├── part2/
  │   ├── hbnb/
@@ -39,6 +40,7 @@ Automated and manual testing using **unittest** and **cURL**.
  │   │   │   ├── __init__.py
  │   │   ├── requirements.txt
  │   │   ├── README.md
+ ```
 ---
 ## 🚀 Installation
 
