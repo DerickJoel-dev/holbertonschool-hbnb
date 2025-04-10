@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Add Review</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="header">
+    <img src="images/logo.png" alt="HBnB Logo" class="logo" />
+    <a href="login.html" class="login-button">Login</a>
+  </header>
+
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="login.html">Login</a>
+  </nav>
+
+  <main>
+    <h1 id="place-name">Beachfront Villa</h1>
+
+    <form id="review-form" class="form">
+      <h2>Add a Review</h2>
+
+      <label for="review">Your Review:</label>
+      <textarea id="review" name="review" required></textarea>
+
+      <label for="rating">Rating:</label>
+      <select id="rating" name="rating" required>
+        <option value="">Select a rating</option>
+        <option value="1">1 - Very Bad</option>
+        <option value="2">2 - Bad</option>
+        <option value="3">3 - Okay</option>
+        <option value="4">4 - Good</option>
+        <option value="5">5 - Excellent</option>
+      </select>
+
+      <button type="submit">Submit Review</button>
+    </form>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 HBnB. All rights reserved.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
