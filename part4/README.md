@@ -75,7 +75,7 @@ python3 seed.py
 python3 run.py
 🌐 Frontend
 Open frontend/index.html using Live Server (VSCode) or Python HTTP server:
-
+```
 👨‍💻 Author
 Derick Joel Quiñones Medina
 
