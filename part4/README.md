@@ -78,7 +78,3 @@ Open frontend/index.html using Live Server (VSCode) or Python HTTP server:
 ```
 👨‍💻 Author
 Derick Joel Quiñones Medina
-
-Holberton School - Software Engineering Track
-
-GitHub: DerickJoel-dev
