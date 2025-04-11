@@ -18,12 +18,6 @@ Welcome to **HBnB Evolution - Part 4**, the final stage of our AirBnB-like appli
 - **Modular Code**: Clean separation of concerns using a 3-layer architecture.
 
 ---
-## 📁 Project Structure
-
-``` bash 
-back_end/ ├── hbnb/ │ ├── app/ │ │ ├── api/v1/ │ │ ├── models/ │ │ ├── services/ │ │ ├── init.py │ └── ... ├── seed.py ├── config.py ├── run.py └── instance/ frontend/ ├── login.html ├── index.html ├── place.html ├── styles.css └── scripts.js 
-```
----
 
 ## 📄 Technical Documentation
 
